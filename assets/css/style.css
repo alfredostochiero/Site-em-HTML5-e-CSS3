@@ -119,8 +119,8 @@ header {
     margin-top: 20px;
 }
 
-.slidearea a {
-    display:block;
+.button, .slidearea a {
+    display:inline-block;
     color:white;
     text-transform:uppercase;
     text-decoration:none;
@@ -185,18 +185,73 @@ header {
 .default .section-body {
     max-width:1140px;
     margin:auto;
-    min-height: 100px;
-    background-color: #CCC;
+
 }
 .default .light {
     background-color: #F7F7F7;
 }
-.default.light .section-title {
+.default.light .section-title,
+.default.light .section-body {
     color:black;
 }
 .default.dark {
     background-color: black;
+    
 }
-.default.dark .section-title {
+.default.dark .section-title,
+.default.dark .section-body {
     color: white;
 }
+
+
+
+
+
+/* CSS de areas especificas do site */
+
+.section-aboutus {
+    display:flex;
+}
+
+.section-aboutus--left{
+    flex:1;
+}
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height:25px;
+    text-align:justify;
+}
+
+.section-aboutus--right {
+    width:500px;
+    height: 300px;
+    box-shadow:0px 0px 8px #333;
+    margin-left:15px;
+}
+
+.section-services {
+    display:flex;
+}
+.section-service {
+    flex:1;
+    text-align: center;
+    border-right:1px solid #333;
+    padding: 10px;
+}
+
+.section-services:first-child{
+    border-left:1px solid #333;
+}
+
+.section-service h4 {
+    margin-top:20px;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+.section-service p {
+    margin-top:10px;
+    font-size:13px;
+    color:#CCC;
+}
+
