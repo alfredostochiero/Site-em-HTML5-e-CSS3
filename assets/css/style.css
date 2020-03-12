@@ -35,6 +35,7 @@ header {
     width: 80px;
     height: 80px;
     background-color: #b28756;
+    border-radius: 40px;
 }
 
 .menu ul, menu li {
@@ -63,7 +64,7 @@ header {
 
 .menu li a:hover {
     border-bottom:5px solid #b28756;
-    font-size:18px ;
+    font-size:15px ;
     color: #CCC;
 }
 
@@ -82,7 +83,7 @@ header {
 }
 
 .banner .sliders {
-    width:100vw ;
+    width:1000vw ; /* 10 vezes o tamano de um slide para poder caber 10 slides   */
     height:100%;
    
 }
@@ -92,4 +93,42 @@ header {
     height:100%;
     display:inline-block;
     background-color: rgba(0,0,0, 0.5);
+}
+
+.banner .slidearea {
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    color:white;
+    align-items:center;
+    justify-content:center;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+}
+.slidearea h1 span {
+    color:#b28756;
+}
+
+.banner h2 {
+    text-transform:uppercase;
+    margin-top: 20px;
+}
+
+.slidearea a {
+    display:block;
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:12px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: #b28756;
+    margin-top: 10px;
+    border-radius:20px;
 }
